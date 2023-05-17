@@ -1,0 +1,30 @@
+.container{
+    /* background-color: #5299d3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(to right,#33658A, rgb(216, 210, 210));
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    margin: 1rem;
+}
+
+.alert{
+    background-color: #7cdedc;
+    color: black;
+    
+}
+.example-card{
+    display: flex;
+    flex-wrap: wrap;
+}

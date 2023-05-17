@@ -1,0 +1,33 @@
+<div class="container-fluid" *ngIf="!condition" >
+  <h2>please login to see all the profiles</h2>  
+</div>
+
+
+
+<div   *ngIf="condition">
+  <button class="btn btn-primary m-5" (click)="logout()"> LogOut</button>
+<div class="container" *ngFor="let user of users" >
+<mat-card class="example-card card">
+    <mat-card-header>
+      <mat-card-title-group class="cards">
+        <mat-card-title>{{user.fullname}}</mat-card-title>
+        <mat-card-subtitle>{{user.city}}</mat-card-subtitle>
+        
+        <img mat-card-md-image src={{user.image}} alt="Image">
+        <mat-card-subtitle>{{user.age}}</mat-card-subtitle>
+        
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptatibus quos harum sed impedit eius ratione eos, est quibusdam quo, veritatis iste voluptatum suscipit in tenetur illum molestiae nesciunt consequatur?</p>
+    </mat-card-content>
+   <div class="buttons">
+  <button class="btn btn-primary" [routerLink] = "['video']">VideoCall</button>
+  <button class="btn btn-primary" [routerLink]="['chat']">Message</button>
+</div>
+  </mat-card>
+
+  <!-- <img src={{user.image}} alt="image"> -->
+</div>
+
+</div>

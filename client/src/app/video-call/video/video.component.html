@@ -1,0 +1,44 @@
+<div class="conatiner" >
+  <h5>Please login to access this page</h5>
+</div>
+
+
+
+<div class="container" >
+<div class="col-md-6">
+    <!-- <h5>Connect with Peer</h5>
+   Video & screen share container  -->
+    <span>PeerId: {{peerId}}</span>
+    <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video"></div>
+
+    <br>
+    
+    <div style="margin-top: 20px;">
+      <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare'/>
+      <button class="button btn btn-primary" (click)="connectWithPeer()">Call Peer</button>
+      <!-- <button mat-raised-button class="btn btn-primary" >Start Local</button> -->
+<!-- <button mat-raised-button class="btn btn-primary" >Stop Local</button>
+<button mat-raised-button class="btn btn-primary" >Call</button>
+<button mat-raised-button class="btn btn-primary" >HangUp</button> -->
+    <!-- </div>
+  </div>
+
+   <button class="btn btn-primary" (click)="logOut()">Logout</button> -->
+ 
+<!-- 
+</div> 
+ <div class="col-md-6">
+  <span>PeerId: {{peerId}}</span>
+  <mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile style="width:400px;height:300px;border:2px solid">
+    <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare'/>
+    <video #local_video [autoplay]="true" [muted]="true"  id="remote-video"></video>
+  </mat-grid-tile>
+  <mat-grid-tile>
+   <p class="video-description">remote:</p> -->
+    <!-- <video #received_video [autoplay]="true"></video> -->
+  <!-- </mat-grid-tile>
+  <button class="button btn btn-primary" (click)="connectWithPeer()">Call Peer</button>
+</mat-grid-list>
+
+</div> --> 

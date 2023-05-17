@@ -1,0 +1,53 @@
+
+<div class="container">
+    <div class="alert">{{alert}}</div>
+<form [formGroup]="userForm">
+<div class="row">
+
+<div class="col">
+<input type="text" class="form-control" placeholder="Full Name" formControlName="fullname">
+</div>
+
+
+
+<div class="col">
+    <input type="text" class="form-control" placeholder="age" formControlName="age">
+    </div>
+
+<div class="col">
+    <input type="file" class="form-control" placeholder="image" formControlName="image">
+    </div>
+    
+
+<div class="col">
+    <input type="text" class="form-control" placeholder="email" formControlName="email">
+    </div>
+
+    <div class="col">
+        <input type="text" class="form-control" placeholder="password" formControlName="password">
+        </div>
+
+
+   
+    <div class="col">
+        <input type="text" class="form-control" placeholder="city" formControlName="city">
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="gender" formControlName="gender">
+            </div>
+
+          
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="peerId" formControlName="peerId">
+                    </div>
+
+</div>
+
+<button class="btn btn-primary" (click)="onSubmit()">submit </button>
+
+</form>
+
+
+</div>

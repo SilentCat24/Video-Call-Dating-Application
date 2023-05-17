@@ -1,0 +1,49 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 1rem;
+    /* border: 2px solid black; */
+    height: 400px;
+
+}
+
+.card{
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #89a1ef;
+
+}
+
+.container-fluid h2{
+    background-color:#246EB9 ;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin:1rem;
+    
+}
+
+.btn{
+    margin: 1rem;
+}
+
+
+.container{
+    background-color: #246EB9;
+}
